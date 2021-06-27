@@ -49,8 +49,18 @@ else
 	docker images | grep $svc 
 	echo "============================================================="
 	docker create --name $svc $svc:latest
+	#docker create --name $svc changwskr/$svc:1.0
+	#docker tag $svc changwskr/$svc:1.0
 	docker start $svc
 	echo "============================================================="
 	docker inspect $svc | grep 'IPAddress' | grep -v Second | tail -1
 fi
+
+#docker stop sp_php01 || true
+#docker ps -a | grep sp_php01 | awk '{print "docker rm "$1}' | sh
+#docker build -t sp_php01 .
+#docker tag sp_php01 changwskr/sp_php01:1.0
+#docker create --name sp_php01 changwskr/sp_php01:1.0
+#docker start sp_php01
+
 
