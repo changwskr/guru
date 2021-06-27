@@ -12,9 +12,13 @@
 ~h
 # 명령 행 히스토리 (새것부터 오래된 것 순):
 :wq!
-|2,0,1624794399,,"wq!"
+|2,0,1624797661,,"wq!"
+:w!
+|2,0,1624797259,,"w!"
 :q!
-|2,0,1624790644,,"q!"
+|2,0,1624795971,,"q!"
+:WQ!
+|2,0,1624795526,,"WQ!"
 
 # 찾을 문자열 히스토리 (새것부터 오래된 것 순):
 
@@ -26,268 +30,343 @@
 
 # 레지스터:
 "0	LINE	0
-	docker build -t $svc:latest .
-|3,0,0,1,1,0,1624789461,"docker build -t $svc:latest ."
-""1	LINE	0
+	docker ps -a | grep sp_commo | awk '{print "docker rm "$1}' | sh
+	docker create --name sp_commo changwskr/sp_commo:1.0
+|3,0,0,1,2,0,1624795875,"docker ps -a | grep sp_commo | awk '{print \"docker rm \"$1}' | sh","docker create --name sp_commo changwskr/sp_commo:1.0"
+"1	LINE	0
 	
-|3,1,1,1,1,0,1624794395,""
+|3,0,1,1,1,0,1624797197,""
 "2	LINE	0
-	
-|3,0,2,1,1,0,1624794368,""
+	docker run -p 8080:8080 -v /home/guru/html:/var/www/html sp_php01
+|3,0,2,1,1,0,1624797195,"docker run -p 8080:8080 -v /home/guru/html:/var/www/html sp_php01"
 "3	LINE	0
-	docker start sp_commo
-|3,0,3,1,1,0,1624794368,"docker start sp_commo"
-"4	LINE	0
-	docker create --name sp_commo changwskr/docro:latest
-|3,0,4,1,1,0,1624794367,"docker create --name sp_commo changwskr/docro:latest"
-"5	LINE	0
-	docker pull changwskr/docro
-|3,0,5,1,1,0,1624794367,"docker pull changwskr/docro"
-"6	LINE	0
-	docker rm -f sp_commo || true
-|3,0,6,1,1,0,1624794366,"docker rm -f sp_commo || true"
-"7	LINE	0
-	git pull
-|3,0,7,1,1,0,1624794366,"git pull"
-"8	LINE	0
-	cd /home/docro
-|3,0,8,1,1,0,1624794366,"cd /home/docro"
-"9	LINE	0
 	
-|3,0,9,1,1,0,1624794346,""
-"-	CHAR	0
-	#
-|3,0,36,0,1,0,1624789904,"#"
+|3,0,3,1,1,0,1624796969,""
+"4	LINE	0
+	docker create --name sp_php01 changwskr/sp_php01:1.0
+|3,0,4,1,1,0,1624796968,"docker create --name sp_php01 changwskr/sp_php01:1.0"
+"5	LINE	0
+	
+|3,0,5,1,1,0,1624795956,""
+"6	LINE	0
+	
+|3,0,6,1,1,0,1624795952,""
+"7	LINE	0
+	docker start sp_php01
+	
+|3,0,7,1,2,0,1624795948,"docker start sp_php01",""
+"8	LINE	0
+	
+|3,0,8,1,1,0,1624795939,""
+"9	LINE	0
+	docker create --name sp_commo changwskr/sp_commo:1.0
+|3,0,9,1,1,0,1624795938,"docker create --name sp_commo changwskr/sp_commo:1.0"
+""-	CHAR	0
+	n
+|3,1,36,0,1,0,1624797648,"n"
 
 # 파일 마크:
-'0  1  0  ~/bin/sp_commo_auto.deploy
-|4,48,1,0,1624794399,"~/bin/sp_commo_auto.deploy"
-'1  41  15  ~/make/sp_commo.mak
-|4,49,41,15,1624790644,"~/make/sp_commo.mak"
-'2  41  0  ~/make/sp_commo.mak
-|4,50,41,0,1624789906,"~/make/sp_commo.mak"
-'3  42  19  ~/make/sp_commo.mak
-|4,51,42,19,1624789556,"~/make/sp_commo.mak"
-'4  42  19  ~/make/sp_commo.mak
-|4,52,42,19,1624789556,"~/make/sp_commo.mak"
-'5  42  19  ~/make/sp_commo.mak
-|4,53,42,19,1624789556,"~/make/sp_commo.mak"
-'6  42  19  ~/make/sp_commo.mak
-|4,54,42,19,1624789556,"~/make/sp_commo.mak"
-'7  42  19  ~/make/sp_commo.mak
-|4,55,42,19,1624789473,"~/make/sp_commo.mak"
-'8  42  19  ~/make/sp_commo.mak
-|4,56,42,19,1624789473,"~/make/sp_commo.mak"
-'9  42  19  ~/make/sp_commo.mak
-|4,57,42,19,1624789473,"~/make/sp_commo.mak"
+'0  1  58  ~/readme/mysql/mysql.mak
+|4,48,1,58,1624797661,"~/readme/mysql/mysql.mak"
+'1  9  19  ~/readme/php/php.mak
+|4,49,9,19,1624797589,"~/readme/php/php.mak"
+'2  1  0  ~/readme/php/php.mak
+|4,50,1,0,1624797153,"~/readme/php/php.mak"
+'3  1  0  ~/readme/php/php.mak
+|4,51,1,0,1624797153,"~/readme/php/php.mak"
+'4  8  9  ~/readme/php/dockerfile
+|4,52,8,9,1624795971,"~/readme/php/dockerfile"
+'5  3  0  ~/readme/php/php.mak
+|4,53,3,0,1624795961,"~/readme/php/php.mak"
+'6  3  0  ~/readme/php/php.mak
+|4,54,3,0,1624795961,"~/readme/php/php.mak"
+'7  3  0  ~/readme/php/php.mak
+|4,55,3,0,1624795961,"~/readme/php/php.mak"
+'8  3  0  ~/readme/php/php.mak
+|4,56,3,0,1624795961,"~/readme/php/php.mak"
+'9  15  9  ~/readme/php/dockerfile
+|4,57,15,9,1624795687,"~/readme/php/dockerfile"
 
 # 점프목록 (새것이 먼저):
--'  1  0  ~/bin/sp_commo_auto.deploy
-|4,39,1,0,1624794399,"~/bin/sp_commo_auto.deploy"
--'  41  15  ~/make/sp_commo.mak
-|4,39,41,15,1624790644,"~/make/sp_commo.mak"
--'  41  15  ~/make/sp_commo.mak
-|4,39,41,15,1624790644,"~/make/sp_commo.mak"
--'  41  0  ~/make/sp_commo.mak
-|4,39,41,0,1624789906,"~/make/sp_commo.mak"
--'  41  0  ~/make/sp_commo.mak
-|4,39,41,0,1624789906,"~/make/sp_commo.mak"
--'  42  19  ~/make/sp_commo.mak
-|4,39,42,19,1624789899,"~/make/sp_commo.mak"
--'  42  19  ~/make/sp_commo.mak
-|4,39,42,19,1624789899,"~/make/sp_commo.mak"
--'  42  19  ~/make/sp_commo.mak
-|4,39,42,19,1624789899,"~/make/sp_commo.mak"
--'  42  19  ~/make/sp_commo.mak
-|4,39,42,19,1624789899,"~/make/sp_commo.mak"
--'  42  19  ~/make/sp_commo.mak
-|4,39,42,19,1624789556,"~/make/sp_commo.mak"
--'  42  19  ~/make/sp_commo.mak
-|4,39,42,19,1624789556,"~/make/sp_commo.mak"
--'  42  19  ~/make/sp_commo.mak
-|4,39,42,19,1624789473,"~/make/sp_commo.mak"
--'  42  19  ~/make/sp_commo.mak
-|4,39,42,19,1624789473,"~/make/sp_commo.mak"
--'  56  0  ~/make/sp_commo.mak
-|4,39,56,0,1624789439,"~/make/sp_commo.mak"
--'  57  0  ~/make/sp_commo.mak
-|4,39,57,0,1624789439,"~/make/sp_commo.mak"
--'  56  0  ~/make/sp_commo.mak
-|4,39,56,0,1624789439,"~/make/sp_commo.mak"
--'  57  0  ~/make/sp_commo.mak
-|4,39,57,0,1624789439,"~/make/sp_commo.mak"
--'  57  0  ~/make/sp_commo.mak
-|4,39,57,0,1624789439,"~/make/sp_commo.mak"
--'  56  0  ~/make/sp_commo.mak
-|4,39,56,0,1624789439,"~/make/sp_commo.mak"
--'  57  0  ~/make/sp_commo.mak
-|4,39,57,0,1624789439,"~/make/sp_commo.mak"
--'  56  0  ~/make/sp_commo.mak
-|4,39,56,0,1624789439,"~/make/sp_commo.mak"
--'  57  0  ~/make/sp_commo.mak
-|4,39,57,0,1624789439,"~/make/sp_commo.mak"
--'  57  0  ~/make/sp_commo.mak
-|4,39,57,0,1624789439,"~/make/sp_commo.mak"
--'  55  0  ~/make/sp_commo.mak
-|4,39,55,0,1624786787,"~/make/sp_commo.mak"
--'  55  0  ~/make/sp_commo.mak
-|4,39,55,0,1624786787,"~/make/sp_commo.mak"
--'  56  0  ~/make/sp_commo.mak
-|4,39,56,0,1624786787,"~/make/sp_commo.mak"
--'  56  0  ~/make/sp_commo.mak
-|4,39,56,0,1624786787,"~/make/sp_commo.mak"
--'  55  0  ~/make/sp_commo.mak
-|4,39,55,0,1624786787,"~/make/sp_commo.mak"
--'  55  0  ~/make/sp_commo.mak
-|4,39,55,0,1624786787,"~/make/sp_commo.mak"
--'  56  0  ~/make/sp_commo.mak
-|4,39,56,0,1624786787,"~/make/sp_commo.mak"
--'  56  0  ~/make/sp_commo.mak
-|4,39,56,0,1624786787,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624786752,"~/make/sp_commo.mak"
--'  51  0  ~/make/sp_commo.mak
-|4,39,51,0,1624786752,"~/make/sp_commo.mak"
--'  53  0  ~/make/sp_commo.mak
-|4,39,53,0,1624786752,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624786752,"~/make/sp_commo.mak"
--'  51  0  ~/make/sp_commo.mak
-|4,39,51,0,1624786752,"~/make/sp_commo.mak"
--'  53  0  ~/make/sp_commo.mak
-|4,39,53,0,1624786752,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624786752,"~/make/sp_commo.mak"
--'  53  0  ~/make/sp_commo.mak
-|4,39,53,0,1624786752,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624786752,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624786752,"~/make/sp_commo.mak"
--'  51  0  ~/make/sp_commo.mak
-|4,39,51,0,1624786752,"~/make/sp_commo.mak"
--'  53  0  ~/make/sp_commo.mak
-|4,39,53,0,1624786752,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624786752,"~/make/sp_commo.mak"
--'  51  0  ~/make/sp_commo.mak
-|4,39,51,0,1624786752,"~/make/sp_commo.mak"
--'  53  0  ~/make/sp_commo.mak
-|4,39,53,0,1624786752,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624786752,"~/make/sp_commo.mak"
--'  53  0  ~/make/sp_commo.mak
-|4,39,53,0,1624786752,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624786752,"~/make/sp_commo.mak"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  1  0  ~/repo/httpd/dpull.sh
-|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  58  ~/readme/mysql/mysql.mak
+|4,39,1,58,1624797661,"~/readme/mysql/mysql.mak"
+-'  9  19  ~/readme/php/php.mak
+|4,39,9,19,1624797589,"~/readme/php/php.mak"
+-'  9  19  ~/readme/php/php.mak
+|4,39,9,19,1624797589,"~/readme/php/php.mak"
+-'  1  0  ~/readme/php/php.mak
+|4,39,1,0,1624797169,"~/readme/php/php.mak"
+-'  1  0  ~/readme/php/php.mak
+|4,39,1,0,1624797169,"~/readme/php/php.mak"
+-'  1  0  ~/readme/php/php.mak
+|4,39,1,0,1624797153,"~/readme/php/php.mak"
+-'  1  0  ~/readme/php/php.mak
+|4,39,1,0,1624797153,"~/readme/php/php.mak"
+-'  3  0  ~/readme/php/php.mak
+|4,39,3,0,1624796459,"~/readme/php/php.mak"
+-'  3  0  ~/readme/php/php.mak
+|4,39,3,0,1624796459,"~/readme/php/php.mak"
+-'  3  0  ~/readme/php/php.mak
+|4,39,3,0,1624796459,"~/readme/php/php.mak"
+-'  3  0  ~/readme/php/php.mak
+|4,39,3,0,1624796459,"~/readme/php/php.mak"
+-'  8  9  ~/readme/php/dockerfile
+|4,39,8,9,1624795971,"~/readme/php/dockerfile"
+-'  8  9  ~/readme/php/dockerfile
+|4,39,8,9,1624795971,"~/readme/php/dockerfile"
+-'  8  9  ~/readme/php/dockerfile
+|4,39,8,9,1624795971,"~/readme/php/dockerfile"
+-'  8  9  ~/readme/php/dockerfile
+|4,39,8,9,1624795971,"~/readme/php/dockerfile"
+-'  8  9  ~/readme/php/dockerfile
+|4,39,8,9,1624795971,"~/readme/php/dockerfile"
+-'  8  9  ~/readme/php/dockerfile
+|4,39,8,9,1624795971,"~/readme/php/dockerfile"
+-'  8  9  ~/readme/php/dockerfile
+|4,39,8,9,1624795971,"~/readme/php/dockerfile"
+-'  8  9  ~/readme/php/dockerfile
+|4,39,8,9,1624795971,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795965,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795965,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795965,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795965,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795965,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795965,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795965,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795965,"~/readme/php/dockerfile"
+-'  3  0  ~/readme/php/php.mak
+|4,39,3,0,1624795961,"~/readme/php/php.mak"
+-'  3  0  ~/readme/php/php.mak
+|4,39,3,0,1624795961,"~/readme/php/php.mak"
+-'  3  0  ~/readme/php/php.mak
+|4,39,3,0,1624795961,"~/readme/php/php.mak"
+-'  3  0  ~/readme/php/php.mak
+|4,39,3,0,1624795961,"~/readme/php/php.mak"
+-'  1  0  ~/readme/php/php.mak
+|4,39,1,0,1624795950,"~/readme/php/php.mak"
+-'  1  0  ~/readme/php/php.mak
+|4,39,1,0,1624795950,"~/readme/php/php.mak"
+-'  1  0  ~/readme/php/php.mak
+|4,39,1,0,1624795950,"~/readme/php/php.mak"
+-'  1  0  ~/readme/php/php.mak
+|4,39,1,0,1624795950,"~/readme/php/php.mak"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  15  9  ~/readme/php/dockerfile
+|4,39,15,9,1624795687,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/php/dockerfile
+|4,39,1,0,1624795571,"~/readme/php/dockerfile"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
+-'  1  0  ~/readme/github-jenkins/php_mysql_apache_install.sh
+|4,39,1,0,1624795528,"~/readme/github-jenkins/php_mysql_apache_install.sh"
 
 # 파일내의 마크 히스토리 (새것부터 오래된 순):
 
-> ~/bin/sp_commo_auto.deploy
-	*	1624794397	0
+> ~/readme/mysql/mysql.mak
+	*	1624797659	0
+	"	1	58
+	^	1	59
+	.	1	58
+	+	1	58
+
+> ~/readme/php/php.mak
+	*	1624797585	0
+	"	9	19
+	^	8	0
+	.	9	21
+	+	1	26
+	+	9	0
+	+	1	26
+	+	9	0
+	+	1	0
+	+	1	19
+	+	1	0
+	+	2	0
+	+	1	0
+	+	2	64
+	+	5	0
+	+	9	0
+	+	3	0
+	+	5	47
+	+	9	0
+	+	7	0
+	+	1	0
+	+	9	0
+	+	4	52
+	+	5	0
+	+	4	0
+	+	5	52
+	+	7	0
+	+	5	0
+	+	7	0
+	+	9	0
+	+	7	22
+	+	9	21
+
+> ~/readme/php/dockerfile
+	*	1624795969	0
+	"	8	9
+	.	14	9
+	+	15	43
+	+	16	0
+	+	14	9
+
+> ~/readme/github-jenkins/php_mysql_apache_install.sh
+	*	1624795526	0
 	"	1	0
+
+> ~/readme/github-jenkins/jenkins_install.sh
+	*	1624794774	0
+	"	15	2
+	.	16	0
+	+	3	26
+	+	11	52
+	+	9	0
+	+	11	0
+	+	7	25
+	+	12	0
+	+	15	4
+	+	9	1
+	+	10	1
+	+	11	1
+	+	12	1
+	+	13	1
+	+	14	1
+	+	15	1
+	+	16	0
+
+> ~/bin/sp_commo_auto.deploy
+	*	1624794468	0
+	"	7	0
 	.	8	0
 	+	1	21
 	+	1	0
