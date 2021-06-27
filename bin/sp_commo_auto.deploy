@@ -1,0 +1,7 @@
+cd /home/guru
+git pull
+docker pull changwskr/sp_commo:1.0 || true
+docker stop sp_commo || true
+docker ps -a | grep sp_commo | awk '{print "docker rm "$1}' | sh
+docker create --name sp_commo changwskr/sp_commo:1.0
+docker start sp_commo

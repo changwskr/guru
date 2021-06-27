@@ -11,10 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # 명령 행 히스토리 (새것부터 오래된 것 순):
-:q!
-|2,0,1624785964,,"q!"
 :wq!
-|2,0,1624785774,,"wq!"
+|2,0,1624794399,,"wq!"
+:q!
+|2,0,1624790644,,"q!"
 
 # 찾을 문자열 히스토리 (새것부터 오래된 것 순):
 
@@ -25,44 +25,284 @@
 # 디버그 행 히스토리 (새것부터 오래된 것 순):
 
 # 레지스터:
+"0	LINE	0
+	docker build -t $svc:latest .
+|3,0,0,1,1,0,1624789461,"docker build -t $svc:latest ."
+""1	LINE	0
+	
+|3,1,1,1,1,0,1624794395,""
+"2	LINE	0
+	
+|3,0,2,1,1,0,1624794368,""
+"3	LINE	0
+	docker start sp_commo
+|3,0,3,1,1,0,1624794368,"docker start sp_commo"
+"4	LINE	0
+	docker create --name sp_commo changwskr/docro:latest
+|3,0,4,1,1,0,1624794367,"docker create --name sp_commo changwskr/docro:latest"
+"5	LINE	0
+	docker pull changwskr/docro
+|3,0,5,1,1,0,1624794367,"docker pull changwskr/docro"
+"6	LINE	0
+	docker rm -f sp_commo || true
+|3,0,6,1,1,0,1624794366,"docker rm -f sp_commo || true"
+"7	LINE	0
+	git pull
+|3,0,7,1,1,0,1624794366,"git pull"
+"8	LINE	0
+	cd /home/docro
+|3,0,8,1,1,0,1624794366,"cd /home/docro"
+"9	LINE	0
+	
+|3,0,9,1,1,0,1624794346,""
+"-	CHAR	0
+	#
+|3,0,36,0,1,0,1624789904,"#"
 
 # 파일 마크:
-'0  1  0  ~/repo/httpd/dpull.sh
-|4,48,1,0,1624785964,"~/repo/httpd/dpull.sh"
-'1  15  51  ~/src/sp_commo.js
-|4,49,15,51,1624785774,"~/src/sp_commo.js"
-'2  52  0  ~/make/sp_commo.mak
-|4,50,52,0,1624785724,"~/make/sp_commo.mak"
+'0  1  0  ~/bin/sp_commo_auto.deploy
+|4,48,1,0,1624794399,"~/bin/sp_commo_auto.deploy"
+'1  41  15  ~/make/sp_commo.mak
+|4,49,41,15,1624790644,"~/make/sp_commo.mak"
+'2  41  0  ~/make/sp_commo.mak
+|4,50,41,0,1624789906,"~/make/sp_commo.mak"
+'3  42  19  ~/make/sp_commo.mak
+|4,51,42,19,1624789556,"~/make/sp_commo.mak"
+'4  42  19  ~/make/sp_commo.mak
+|4,52,42,19,1624789556,"~/make/sp_commo.mak"
+'5  42  19  ~/make/sp_commo.mak
+|4,53,42,19,1624789556,"~/make/sp_commo.mak"
+'6  42  19  ~/make/sp_commo.mak
+|4,54,42,19,1624789556,"~/make/sp_commo.mak"
+'7  42  19  ~/make/sp_commo.mak
+|4,55,42,19,1624789473,"~/make/sp_commo.mak"
+'8  42  19  ~/make/sp_commo.mak
+|4,56,42,19,1624789473,"~/make/sp_commo.mak"
+'9  42  19  ~/make/sp_commo.mak
+|4,57,42,19,1624789473,"~/make/sp_commo.mak"
 
 # 점프목록 (새것이 먼저):
+-'  1  0  ~/bin/sp_commo_auto.deploy
+|4,39,1,0,1624794399,"~/bin/sp_commo_auto.deploy"
+-'  41  15  ~/make/sp_commo.mak
+|4,39,41,15,1624790644,"~/make/sp_commo.mak"
+-'  41  15  ~/make/sp_commo.mak
+|4,39,41,15,1624790644,"~/make/sp_commo.mak"
+-'  41  0  ~/make/sp_commo.mak
+|4,39,41,0,1624789906,"~/make/sp_commo.mak"
+-'  41  0  ~/make/sp_commo.mak
+|4,39,41,0,1624789906,"~/make/sp_commo.mak"
+-'  42  19  ~/make/sp_commo.mak
+|4,39,42,19,1624789899,"~/make/sp_commo.mak"
+-'  42  19  ~/make/sp_commo.mak
+|4,39,42,19,1624789899,"~/make/sp_commo.mak"
+-'  42  19  ~/make/sp_commo.mak
+|4,39,42,19,1624789899,"~/make/sp_commo.mak"
+-'  42  19  ~/make/sp_commo.mak
+|4,39,42,19,1624789899,"~/make/sp_commo.mak"
+-'  42  19  ~/make/sp_commo.mak
+|4,39,42,19,1624789556,"~/make/sp_commo.mak"
+-'  42  19  ~/make/sp_commo.mak
+|4,39,42,19,1624789556,"~/make/sp_commo.mak"
+-'  42  19  ~/make/sp_commo.mak
+|4,39,42,19,1624789473,"~/make/sp_commo.mak"
+-'  42  19  ~/make/sp_commo.mak
+|4,39,42,19,1624789473,"~/make/sp_commo.mak"
+-'  56  0  ~/make/sp_commo.mak
+|4,39,56,0,1624789439,"~/make/sp_commo.mak"
+-'  57  0  ~/make/sp_commo.mak
+|4,39,57,0,1624789439,"~/make/sp_commo.mak"
+-'  56  0  ~/make/sp_commo.mak
+|4,39,56,0,1624789439,"~/make/sp_commo.mak"
+-'  57  0  ~/make/sp_commo.mak
+|4,39,57,0,1624789439,"~/make/sp_commo.mak"
+-'  57  0  ~/make/sp_commo.mak
+|4,39,57,0,1624789439,"~/make/sp_commo.mak"
+-'  56  0  ~/make/sp_commo.mak
+|4,39,56,0,1624789439,"~/make/sp_commo.mak"
+-'  57  0  ~/make/sp_commo.mak
+|4,39,57,0,1624789439,"~/make/sp_commo.mak"
+-'  56  0  ~/make/sp_commo.mak
+|4,39,56,0,1624789439,"~/make/sp_commo.mak"
+-'  57  0  ~/make/sp_commo.mak
+|4,39,57,0,1624789439,"~/make/sp_commo.mak"
+-'  57  0  ~/make/sp_commo.mak
+|4,39,57,0,1624789439,"~/make/sp_commo.mak"
+-'  55  0  ~/make/sp_commo.mak
+|4,39,55,0,1624786787,"~/make/sp_commo.mak"
+-'  55  0  ~/make/sp_commo.mak
+|4,39,55,0,1624786787,"~/make/sp_commo.mak"
+-'  56  0  ~/make/sp_commo.mak
+|4,39,56,0,1624786787,"~/make/sp_commo.mak"
+-'  56  0  ~/make/sp_commo.mak
+|4,39,56,0,1624786787,"~/make/sp_commo.mak"
+-'  55  0  ~/make/sp_commo.mak
+|4,39,55,0,1624786787,"~/make/sp_commo.mak"
+-'  55  0  ~/make/sp_commo.mak
+|4,39,55,0,1624786787,"~/make/sp_commo.mak"
+-'  56  0  ~/make/sp_commo.mak
+|4,39,56,0,1624786787,"~/make/sp_commo.mak"
+-'  56  0  ~/make/sp_commo.mak
+|4,39,56,0,1624786787,"~/make/sp_commo.mak"
+-'  52  0  ~/make/sp_commo.mak
+|4,39,52,0,1624786752,"~/make/sp_commo.mak"
+-'  51  0  ~/make/sp_commo.mak
+|4,39,51,0,1624786752,"~/make/sp_commo.mak"
+-'  53  0  ~/make/sp_commo.mak
+|4,39,53,0,1624786752,"~/make/sp_commo.mak"
+-'  52  0  ~/make/sp_commo.mak
+|4,39,52,0,1624786752,"~/make/sp_commo.mak"
+-'  51  0  ~/make/sp_commo.mak
+|4,39,51,0,1624786752,"~/make/sp_commo.mak"
+-'  53  0  ~/make/sp_commo.mak
+|4,39,53,0,1624786752,"~/make/sp_commo.mak"
+-'  52  0  ~/make/sp_commo.mak
+|4,39,52,0,1624786752,"~/make/sp_commo.mak"
+-'  53  0  ~/make/sp_commo.mak
+|4,39,53,0,1624786752,"~/make/sp_commo.mak"
+-'  52  0  ~/make/sp_commo.mak
+|4,39,52,0,1624786752,"~/make/sp_commo.mak"
+-'  52  0  ~/make/sp_commo.mak
+|4,39,52,0,1624786752,"~/make/sp_commo.mak"
+-'  51  0  ~/make/sp_commo.mak
+|4,39,51,0,1624786752,"~/make/sp_commo.mak"
+-'  53  0  ~/make/sp_commo.mak
+|4,39,53,0,1624786752,"~/make/sp_commo.mak"
+-'  52  0  ~/make/sp_commo.mak
+|4,39,52,0,1624786752,"~/make/sp_commo.mak"
+-'  51  0  ~/make/sp_commo.mak
+|4,39,51,0,1624786752,"~/make/sp_commo.mak"
+-'  53  0  ~/make/sp_commo.mak
+|4,39,53,0,1624786752,"~/make/sp_commo.mak"
+-'  52  0  ~/make/sp_commo.mak
+|4,39,52,0,1624786752,"~/make/sp_commo.mak"
+-'  53  0  ~/make/sp_commo.mak
+|4,39,53,0,1624786752,"~/make/sp_commo.mak"
+-'  52  0  ~/make/sp_commo.mak
+|4,39,52,0,1624786752,"~/make/sp_commo.mak"
 -'  1  0  ~/repo/httpd/dpull.sh
 |4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
--'  15  51  ~/src/sp_commo.js
-|4,39,15,51,1624785774,"~/src/sp_commo.js"
--'  15  51  ~/src/sp_commo.js
-|4,39,15,51,1624785774,"~/src/sp_commo.js"
--'  1  0  ~/src/sp_commo.js
-|4,39,1,0,1624785763,"~/src/sp_commo.js"
--'  1  0  ~/src/sp_commo.js
-|4,39,1,0,1624785763,"~/src/sp_commo.js"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624785724,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624785724,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624785724,"~/make/sp_commo.mak"
--'  52  0  ~/make/sp_commo.mak
-|4,39,52,0,1624785724,"~/make/sp_commo.mak"
--'  1  0  ~/make/sp_commo.mak
-|4,39,1,0,1624785716,"~/make/sp_commo.mak"
--'  1  0  ~/make/sp_commo.mak
-|4,39,1,0,1624785716,"~/make/sp_commo.mak"
--'  1  0  ~/make/sp_commo.mak
-|4,39,1,0,1624785716,"~/make/sp_commo.mak"
--'  1  0  ~/make/sp_commo.mak
-|4,39,1,0,1624785716,"~/make/sp_commo.mak"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
+-'  1  0  ~/repo/httpd/dpull.sh
+|4,39,1,0,1624785964,"~/repo/httpd/dpull.sh"
 
 # 파일내의 마크 히스토리 (새것부터 오래된 순):
+
+> ~/bin/sp_commo_auto.deploy
+	*	1624794397	0
+	"	1	0
+	.	8	0
+	+	1	21
+	+	1	0
+	+	7	21
+	+	1	0
+	+	8	0
+
+> ~/make/sp_commo.mak
+	*	1624790643	0
+	"	41	15
+	.	41	0
+	+	42	0
+	+	41	0
+	+	42	0
+	+	41	0
 
 > ~/repo/httpd/dpull.sh
 	*	1624785960	0
@@ -74,7 +314,3 @@
 	.	15	51
 	+	13	14
 	+	15	51
-
-> ~/make/sp_commo.mak
-	*	1624785721	0
-	"	52	0
