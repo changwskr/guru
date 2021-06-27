@@ -11,10 +11,12 @@
 # hlsearch on (H) or off (h):
 ~h
 # 명령 행 히스토리 (새것부터 오래된 것 순):
-:q!
-|2,0,1624800592,,"q!"
 :wq!
-|2,0,1624800167,,"wq!"
+|2,0,1624801700,,"wq!"
+:set ts=4
+|2,0,1624801668,,"set ts=4"
+:q!
+|2,0,1624801575,,"q!"
 :w!
 |2,0,1624799139,,"w!"
 :.,.+1!
@@ -35,279 +37,285 @@
 	RUN echo "========================================="
 |3,0,0,1,1,0,1624799202,"RUN echo \"=========================================\""
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1624800162,""
+	cp $HOME/src/$svc.js ./$svc
+|3,1,1,1,1,0,1624801689,"cp $HOME/src/$svc.js ./$svc"
 "2	LINE	0
 	
-|3,0,2,1,1,0,1624799632,""
+|3,0,2,1,1,0,1624800162,""
 "3	LINE	0
 	
 |3,0,3,1,1,0,1624799632,""
 "4	LINE	0
-	도커설치 사전작업
-|3,0,4,1,1,0,1624799584,"도커설치 사전작업"
-"5	LINE	0
 	
-|3,0,5,1,1,0,1624799584,""
+|3,0,4,1,1,0,1624799632,""
+"5	LINE	0
+	도커설치 사전작업
+|3,0,5,1,1,0,1624799584,"도커설치 사전작업"
 "6	LINE	0
 	
-|3,0,6,1,1,0,1624799366,""
+|3,0,6,1,1,0,1624799584,""
 "7	LINE	0
-	RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn
-|3,0,7,1,1,0,1624798732,"RUN echo \"ServerName localhost\" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn"
-"8	LINE	0
 	
-|3,0,8,1,1,0,1624798251,""
+|3,0,7,1,1,0,1624799366,""
+"8	LINE	0
+	RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn
+|3,0,8,1,1,0,1624798732,"RUN echo \"ServerName localhost\" | tee /etc/apache2/conf-available/fqdn.conf && a2enconf fqdn"
 "9	LINE	0
 	
-|3,0,9,1,1,0,1624797197,""
+|3,0,9,1,1,0,1624798251,""
 "-	CHAR	0
 	8
 |3,0,36,0,1,0,1624799370,"8"
 
 # 파일 마크:
-'0  25  1  ~/readme/httpd/sp_httpd.mak
-|4,48,25,1,1624800592,"~/readme/httpd/sp_httpd.mak"
-'1  1  24  ~/readme/httpd/sp_httpd.mak
-|4,49,1,24,1624800265,"~/readme/httpd/sp_httpd.mak"
-'2  1  24  ~/readme/httpd/sp_httpd.mak
-|4,50,1,24,1624800265,"~/readme/httpd/sp_httpd.mak"
-'3  9  0  ~/readme/httpd/sp_httpd.dockerfile
-|4,51,9,0,1624800170,"~/readme/httpd/sp_httpd.dockerfile"
-'4  18  0  ~/readme/php/dockerfile
-|4,52,18,0,1624799878,"~/readme/php/dockerfile"
-'5  1  0  ~/readme/docker/docker.install
-|4,53,1,0,1624799636,"~/readme/docker/docker.install"
-'6  1  0  ~/readme/php/netst.sh
-|4,54,1,0,1624799486,"~/readme/php/netst.sh"
-'7  1  5  ~/readme/php/netst.sh
-|4,55,1,5,1624799381,"~/readme/php/netst.sh"
-'8  14  0  ~/readme/php/dockerfile
-|4,56,14,0,1624799210,"~/readme/php/dockerfile"
-'9  14  0  ~/readme/php/dockerfile
-|4,57,14,0,1624799210,"~/readme/php/dockerfile"
+'0  51  0  ~/readme/httpd/sp_httpd.mak.1
+|4,48,51,0,1624801700,"~/readme/httpd/sp_httpd.mak.1"
+'1  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,49,8,0,1624801575,"~/readme/httpd/sp_httpd.dockerfile"
+'2  25  1  ~/readme/httpd/sp_httpd.mak
+|4,50,25,1,1624801524,"~/readme/httpd/sp_httpd.mak"
+'3  25  1  ~/readme/httpd/sp_httpd.mak
+|4,51,25,1,1624801317,"~/readme/httpd/sp_httpd.mak"
+'4  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,52,8,0,1624801296,"~/readme/httpd/sp_httpd.dockerfile"
+'5  14  31  ~/readme/php/dockerfile
+|4,53,14,31,1624801271,"~/readme/php/dockerfile"
+'6  13  31  ~/readme/php/dockerfile
+|4,54,13,31,1624801060,"~/readme/php/dockerfile"
+'7  13  31  ~/readme/php/dockerfile
+|4,55,13,31,1624801060,"~/readme/php/dockerfile"
+'8  25  1  ~/readme/httpd/sp_httpd.mak
+|4,56,25,1,1624800592,"~/readme/httpd/sp_httpd.mak"
+'9  25  1  ~/readme/httpd/sp_httpd.mak
+|4,57,25,1,1624800592,"~/readme/httpd/sp_httpd.mak"
 
 # 점프목록 (새것이 먼저):
+-'  51  0  ~/readme/httpd/sp_httpd.mak.1
+|4,39,51,0,1624801700,"~/readme/httpd/sp_httpd.mak.1"
+-'  1  0  ~/readme/httpd/sp_httpd.mak.1
+|4,39,1,0,1624801664,"~/readme/httpd/sp_httpd.mak.1"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801575,"~/readme/httpd/sp_httpd.dockerfile"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801575,"~/readme/httpd/sp_httpd.dockerfile"
 -'  25  1  ~/readme/httpd/sp_httpd.mak
-|4,39,25,1,1624800592,"~/readme/httpd/sp_httpd.mak"
--'  1  24  ~/readme/httpd/sp_httpd.mak
-|4,39,1,24,1624800286,"~/readme/httpd/sp_httpd.mak"
--'  1  24  ~/readme/httpd/sp_httpd.mak
-|4,39,1,24,1624800265,"~/readme/httpd/sp_httpd.mak"
+|4,39,25,1,1624801524,"~/readme/httpd/sp_httpd.mak"
+-'  25  1  ~/readme/httpd/sp_httpd.mak
+|4,39,25,1,1624801524,"~/readme/httpd/sp_httpd.mak"
+-'  25  1  ~/readme/httpd/sp_httpd.mak
+|4,39,25,1,1624801524,"~/readme/httpd/sp_httpd.mak"
+-'  25  1  ~/readme/httpd/sp_httpd.mak
+|4,39,25,1,1624801524,"~/readme/httpd/sp_httpd.mak"
+-'  25  1  ~/readme/httpd/sp_httpd.mak
+|4,39,25,1,1624801317,"~/readme/httpd/sp_httpd.mak"
+-'  25  1  ~/readme/httpd/sp_httpd.mak
+|4,39,25,1,1624801317,"~/readme/httpd/sp_httpd.mak"
+-'  25  1  ~/readme/httpd/sp_httpd.mak
+|4,39,25,1,1624801317,"~/readme/httpd/sp_httpd.mak"
+-'  25  1  ~/readme/httpd/sp_httpd.mak
+|4,39,25,1,1624801317,"~/readme/httpd/sp_httpd.mak"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801296,"~/readme/httpd/sp_httpd.dockerfile"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801296,"~/readme/httpd/sp_httpd.dockerfile"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801296,"~/readme/httpd/sp_httpd.dockerfile"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801296,"~/readme/httpd/sp_httpd.dockerfile"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801296,"~/readme/httpd/sp_httpd.dockerfile"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801296,"~/readme/httpd/sp_httpd.dockerfile"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801296,"~/readme/httpd/sp_httpd.dockerfile"
+-'  8  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,8,0,1624801296,"~/readme/httpd/sp_httpd.dockerfile"
 -'  9  0  ~/readme/httpd/sp_httpd.dockerfile
-|4,39,9,0,1624800170,"~/readme/httpd/sp_httpd.dockerfile"
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
 -'  9  0  ~/readme/httpd/sp_httpd.dockerfile
-|4,39,9,0,1624800170,"~/readme/httpd/sp_httpd.dockerfile"
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
 -'  9  0  ~/readme/httpd/sp_httpd.dockerfile
-|4,39,9,0,1624800170,"~/readme/httpd/sp_httpd.dockerfile"
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
 -'  9  0  ~/readme/httpd/sp_httpd.dockerfile
-|4,39,9,0,1624800170,"~/readme/httpd/sp_httpd.dockerfile"
--'  1  0  ~/readme/httpd/sp_httpd.dockerfile
-|4,39,1,0,1624800120,"~/readme/httpd/sp_httpd.dockerfile"
--'  1  0  ~/readme/httpd/sp_httpd.dockerfile
-|4,39,1,0,1624800120,"~/readme/httpd/sp_httpd.dockerfile"
--'  1  0  ~/readme/httpd/sp_httpd.dockerfile
-|4,39,1,0,1624800120,"~/readme/httpd/sp_httpd.dockerfile"
--'  1  0  ~/readme/httpd/sp_httpd.dockerfile
-|4,39,1,0,1624800120,"~/readme/httpd/sp_httpd.dockerfile"
--'  18  0  ~/readme/php/dockerfile
-|4,39,18,0,1624799878,"~/readme/php/dockerfile"
--'  18  0  ~/readme/php/dockerfile
-|4,39,18,0,1624799878,"~/readme/php/dockerfile"
--'  18  0  ~/readme/php/dockerfile
-|4,39,18,0,1624799878,"~/readme/php/dockerfile"
--'  18  0  ~/readme/php/dockerfile
-|4,39,18,0,1624799878,"~/readme/php/dockerfile"
--'  18  0  ~/readme/php/dockerfile
-|4,39,18,0,1624799878,"~/readme/php/dockerfile"
--'  18  0  ~/readme/php/dockerfile
-|4,39,18,0,1624799878,"~/readme/php/dockerfile"
--'  18  0  ~/readme/php/dockerfile
-|4,39,18,0,1624799878,"~/readme/php/dockerfile"
--'  18  0  ~/readme/php/dockerfile
-|4,39,18,0,1624799878,"~/readme/php/dockerfile"
--'  14  0  ~/readme/php/dockerfile
-|4,39,14,0,1624799848,"~/readme/php/dockerfile"
--'  14  0  ~/readme/php/dockerfile
-|4,39,14,0,1624799848,"~/readme/php/dockerfile"
--'  14  0  ~/readme/php/dockerfile
-|4,39,14,0,1624799848,"~/readme/php/dockerfile"
--'  14  0  ~/readme/php/dockerfile
-|4,39,14,0,1624799848,"~/readme/php/dockerfile"
--'  14  0  ~/readme/php/dockerfile
-|4,39,14,0,1624799848,"~/readme/php/dockerfile"
--'  14  0  ~/readme/php/dockerfile
-|4,39,14,0,1624799848,"~/readme/php/dockerfile"
--'  14  0  ~/readme/php/dockerfile
-|4,39,14,0,1624799848,"~/readme/php/dockerfile"
--'  14  0  ~/readme/php/dockerfile
-|4,39,14,0,1624799848,"~/readme/php/dockerfile"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  1  0  ~/readme/docker/docker.install
-|4,39,1,0,1624799636,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  2  0  ~/readme/docker/docker.install
-|4,39,2,0,1624799589,"~/readme/docker/docker.install"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  0  ~/readme/php/netst.sh
-|4,39,1,0,1624799486,"~/readme/php/netst.sh"
--'  1  5  ~/readme/php/netst.sh
-|4,39,1,5,1624799381,"~/readme/php/netst.sh"
--'  1  5  ~/readme/php/netst.sh
-|4,39,1,5,1624799381,"~/readme/php/netst.sh"
--'  1  5  ~/readme/php/netst.sh
-|4,39,1,5,1624799381,"~/readme/php/netst.sh"
--'  1  5  ~/readme/php/netst.sh
-|4,39,1,5,1624799381,"~/readme/php/netst.sh"
--'  1  5  ~/readme/php/netst.sh
-|4,39,1,5,1624799381,"~/readme/php/netst.sh"
--'  1  5  ~/readme/php/netst.sh
-|4,39,1,5,1624799381,"~/readme/php/netst.sh"
--'  1  5  ~/readme/php/netst.sh
-|4,39,1,5,1624799381,"~/readme/php/netst.sh"
--'  1  5  ~/readme/php/netst.sh
-|4,39,1,5,1624799381,"~/readme/php/netst.sh"
--'  1  5  ~/readme/php/netst.sh
-|4,39,1,5,1624799381,"~/readme/php/netst.sh"
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
+-'  9  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
+-'  9  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
+-'  9  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
+-'  9  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
+-'  9  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
+-'  9  0  ~/readme/httpd/sp_httpd.dockerfile
+|4,39,9,0,1624801288,"~/readme/httpd/sp_httpd.dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  14  31  ~/readme/php/dockerfile
+|4,39,14,31,1624801271,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801258,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801060,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801060,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801060,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801060,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801060,"~/readme/php/dockerfile"
+-'  13  31  ~/readme/php/dockerfile
+|4,39,13,31,1624801060,"~/readme/php/dockerfile"
 
 # 파일내의 마크 히스토리 (새것부터 오래된 순):
 
+> ~/readme/httpd/sp_httpd.mak.1
+	*	1624801698	0
+	"	51	0
+	.	38	0
+	+	38	0
+
+> ~/readme/httpd/sp_httpd.dockerfile
+	*	1624801573	0
+	"	8	0
+	.	10	0
+	+	9	43
+	+	10	0
+
 > ~/readme/httpd/sp_httpd.mak
-	*	1624800381	0
+	*	1624801522	0
 	"	25	1
 	^	26	0
 	.	26	0
 	+	26	0
 
-> ~/readme/httpd/sp_httpd.dockerfile
-	*	1624800164	0
-	"	9	0
-	.	10	0
-	+	9	43
-	+	10	0
-
 > ~/readme/php/dockerfile
-	*	1624799876	0
-	"	18	0
+	*	1624801269	0
+	"	14	31
 	^	13	52
 	.	16	0
 	+	19	43
