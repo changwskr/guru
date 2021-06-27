@@ -1,0 +1,15 @@
+#도커설치 사전작업
+sudo apt install apt-transport-https
+sudo apt install ca-certificates
+sudo apt install curl
+sudo apt install software-poperties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-reposigory “deb [arch=amd64] https://download.docker.com/linux/ubuntu
+sudo apt update
+
+#실제 docker를 다운로드 받는다.
+apt-cache policy docker-ce
+sudo apt install docker-ce
+sytemctl status docker
