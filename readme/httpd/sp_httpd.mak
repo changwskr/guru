@@ -51,3 +51,4 @@ else
 	docker start $svc
 	echo "============================================================="
 	docker inspect $svc | grep 'IPAddress' | grep -v Second | tail -1
+fi

@@ -54,3 +54,5 @@ else
     docker start $svc
 fi
 
+#docker run -p 80:80 -v /home/guru/html:/var/www/html sp_php01
+
